@@ -69,7 +69,7 @@
 #waybar {
     background: @bg;
     color: @light;
-    font-family: "Cantarell", "Font Awesome 5 Pro";
+    font-family: "Cantarell", "MesloLGS NF";
     font-size: 12px;
     font-weight: bold;
 }

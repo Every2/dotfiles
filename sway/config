@@ -25,7 +25,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * background ~/Imagens/wallpaper.png fill
+output * background ~/Pictures/wallpaper.png fill
 #
 # Example configuration:
 #
@@ -241,3 +241,15 @@ bindsym XF86AudioPrev exec playerctl previous
 
 hide_edge_borders smart
 for_window [app_id=".*"] border none
+
+set $grimshot /usr/bin/grimshot
+bindsym Print exec $grimshot --notify save screen
+bindsym Ctrl+Print exec $grimshot --notify copy screen
+bindsym Shift+Print exec $grimshot --notify save area
+bindsym Ctrl+Shift+Print exec $grimshot --notify copy area
+
+for_window [app_id="kate"] floating enable, border none
+
+for_window [app_id="dolphin"] floating enable, border none
+
+
